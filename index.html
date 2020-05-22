@@ -15,7 +15,7 @@
 <body>
 
     <header>
-        <div class="menu-toggler">
+        <div class="menu-toggler" data-aos="fade-down">
             <div class="bar half start"></div>
             <div class="bar"></div>
             <div class="bar half end"></div>
@@ -47,10 +47,12 @@
         </nav>
 
         <div class="landing-text">
-            <h5>Hi, my name is</h5>
-            <h1>Devyansh Chawla.</h1>
-            <h6>Undergrad 💻 at NIT, Kurukshetra.</h6>
-            <button class="btn">Get In Touch</button>
+            <h5 data-aos="zoom-in" data-aos-duration="1000">Hi, my name is</h5>
+            <h1 data-aos="zoom-in" data-aos-easing="ease-in-out">Devyansh Chawla.</h1>
+            <h6 data-aos="zoom-in" data-aos-duration="1000">Undergrad 💻 at NIT, Kurukshetra
+                &nbsp &nbsp<div></div>
+            </h6>
+            <button class="btn"><a href="mailto:schawla333333@gmail.com">Get In Touch</a></button>
         </div>  
     </header>
 
@@ -262,6 +264,12 @@
     </footer>
     
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        AOS.init({
+            once: true
+        });
+    </script>
     <script src="main.js"></script>
 </body>
 </html>
