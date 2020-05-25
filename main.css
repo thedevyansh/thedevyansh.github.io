@@ -7,7 +7,7 @@
 html{
     font-size: 10px;
     color: #eee;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 body {
@@ -279,25 +279,34 @@ li{
 
 .about-heading{
     text-align: center;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     line-height: 0;
     margin-bottom: 6rem;
 }
 
 .about-heading h1{
-    /*font-size: 10rem;*/
-    font-size: 8rem;
-    opacity: 0.6;
+    font-size: 3rem;
+    color: #CCD6F6;
 }
 
-.about-heading h6{
+.about-heading span {
+    color: #64ffda;
+    font-family: 'Space Mono', monospace;
     font-size: 2rem;
     font-weight: 300;
+}
+
+.about-details p {
+    color: #8892b0;
 }
 
 .profile-img {
     flex: 1;
     margin-right: 5rem;
+}
+
+.profile-img img {
+    border-radius: 4px;
 }
 
 .about-details {
@@ -309,20 +318,21 @@ li{
 }
 
 .social-media i{
-    font-size: 3rem;
+    font-size: 2.5rem;
     transition: color 650ms;
+    color: #CCD6F6;
 }
 
-.fa-facebook-square:hover{
+.fa-facebook:hover{
     color: #4267b2;
 }
 
-.fa-twitter-square:hover{
+.fa-twitter:hover{
     color: #38a1f3;
 }
 
-.fa-instagram-square:hover{
-    color: #4267b2;
+.fa-instagram:hover{
+    color: #e6002f;
 }
 
 .my-skills{
