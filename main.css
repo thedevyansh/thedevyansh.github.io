@@ -126,8 +126,9 @@ li{
 
 .nav-link{
     font-family: 'Space Mono', monospace;
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: 1rem;
+    transition: color 650ms;
 }
 
 .nav-link span{
@@ -264,8 +265,8 @@ li{
 
 .landing-text h6 div{
     display: inline-block;
-    width: 100px;
-    height: 15px;
+    width: 40px;
+    height: 14px;
     background-color: #8892B0;
 }
 
@@ -549,25 +550,17 @@ input[type="submit"]:hover{
 }
 
 @media screen and (max-width: 768px){
-    body {
-        /*background: url("images/sitebg2.jpg") no-repeat center fixed;
-        background-size: cover;*/
-    }
 
     .nav-list{
         flex-direction: column;
     }
 
     li{
-        margin: 2rem 0;
+        margin: 2.2rem 0;
     }
 
-    .nav-link{
-        font-size: 4.5rem;
-    }
-
-    .about-heading h1{
-        font-size: 8rem;
+    .nav-list li span {
+        display: none;
     }
 
     .section-heading h1{
@@ -615,11 +608,17 @@ input[type="submit"]:hover{
     }
 
     .landing-text h6{
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 
-    .nav-link{
-        font-size: 2.5rem;
+    .landing-text h6 div {
+        width: 30px;
+        height: 11px;
+    }
+
+    .landing-text .btn {
+
+        padding: 10px 8px;
     }
 
     .about .container{
@@ -659,6 +658,12 @@ input[type="submit"]:hover{
 
     .up{
         right: 2rem;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .landing-text h6 div {
+        display: none;
     }
 }
 
