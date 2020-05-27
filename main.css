@@ -142,6 +142,20 @@ li{
     border-radius: initial;
 }
 
+.name-logo {
+    position: absolute;
+    top: 5rem;
+    left: 5rem;
+}
+
+.name-logo .D{
+    width: 3rem;
+    height: 3rem;
+    border: 2px solid #64ffda;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
 .menu-toggler{
     position: absolute;
     top: 5rem;
@@ -418,6 +432,10 @@ li{
     color: #2f67cd;
 }
 
+.portfolio-description i {
+    font-size: 1.5rem;
+}
+
 .timeline ul{
     border-left: 4px solid #ffe838;
     border-radius: .8rem;
@@ -636,6 +654,14 @@ input[type="submit"]:hover{
 }
 
 @media screen and (max-width: 600px){
+
+    .name-logo {
+        top: 2rem;
+        left: 2rem;
+        width: 2.2rem;
+        height: 2.2rem;
+    }
+
     .menu-toggler{
         top: 2rem;
         right: 2rem;
