@@ -325,16 +325,11 @@ li{
     color: #CCD6F6;
 }
 
-.fa-facebook:hover{
-    color: #4267b2;
-}
-
-.fa-twitter:hover{
-    color: #38a1f3;
-}
-
-.fa-instagram:hover{
-    color: #e6002f;
+.fa-facebook:hover,
+.fa-twitter:hover,
+.fa-instagram:hover
+{
+    color: #64ffda;
 }
 
 .my-skills{
@@ -360,18 +355,18 @@ li{
 }
 
 .icon-container{
-    width: 10rem;
-    height: 10rem;
-    border: 3px solid #ffe838;
-    background-color: #fd57bf;
+    width: 8rem;
+    height: 8rem;
+    border: 1px solid #64ffda;
+    background-color: #172a45;
     margin-bottom: 2rem;
     display: flex;
     transform: rotate(45deg);
 }
 
 .icon-container i{
-    color: #ffe838;
-    font-size: 5rem;
+    color: #64ffda;
+    font-size: 3rem;
     margin: auto;
     transform: rotate(-45deg);
 }
@@ -389,6 +384,12 @@ li{
 
 .portfolio-img{
     flex: 1;
+}
+
+.portfolio-img img {
+    width: 100%;
+    height: auto;
+    min-width: 280px;
 }
 
 .portfolio-description h1{
@@ -517,9 +518,9 @@ input[type="submit"]:hover{
 .copyright{
     width: 100%;
     text-align: center;
-    padding: 2rem 0;
+    padding: 1.5rem 0;
     position: relative;
-    margin: 200px 0 10px 0;
+    margin: 150px 0 10px 0;
     font-family: 'Space Mono', monospace;
 }
 
@@ -528,7 +529,7 @@ input[type="submit"]:hover{
     width: 5rem;
     height: 5rem;
     background-color: #0A192F;
-    top: -2.5rem;
+    top: 0;
     right: 5rem;
     border-radius: 100%;
     display: flex;
@@ -625,6 +626,12 @@ input[type="submit"]:hover{
 
     .timeline .date::after{
         left: -5.9rem;
+    }
+
+    .up {
+        width: 3rem;
+        height: 3rem;
+        top: -3.5rem;
     }
 }
 
