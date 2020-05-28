@@ -374,11 +374,11 @@ li{
     height: 8rem;
     background-color: #0A192F;
     margin-bottom: 2rem;
-    border-radius: 4px;
+    border-radius: 6px;
     display: flex;
     transform: rotate(45deg);
     box-shadow: 5px 5px 10px rgba(0, 0, 0 , 0.4),
-    -2px -2px 10px rgba(255, 255,255 , 0.1);
+    -1px -1px 10px rgba(255, 255,255 , 0.07);
 }
 
 .icon-container i{
