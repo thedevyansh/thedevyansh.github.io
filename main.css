@@ -379,7 +379,7 @@ li{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 5rem;
+    margin-bottom: 10rem;
 }
 
 .portfolio-item:last-child{
@@ -653,6 +653,20 @@ textarea{
         font-size: 4rem;
     }
 
+    .portfolio-item{
+        flex-direction: column;
+    }
+
+    .portfolio-img{
+        margin: 0 0 2rem 0;
+        order: 1;
+    }
+
+    .portfolio-description{
+        margin: 0;
+        order: 2;
+    }
+
     .timeline ul{
         margin: 0 0 0 auto;
     }
@@ -709,20 +723,6 @@ textarea{
     .profile-img{
         width: 100%;
         margin: 0 0 7rem 0;
-    }
-
-    .portfolio-item{
-        flex-direction: column;
-    }
-
-    .portfolio-img{
-        margin: 0 0 2rem 0;
-        order: 1;
-    }
-
-    .portfolio-description{
-        margin: 0;
-        order: 2;
     }
 
     .timeline p{
