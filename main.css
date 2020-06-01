@@ -563,13 +563,14 @@ textarea{
 }
 
 .portfolio .more{
-    margin-top: 6rem;
-    display: block;
+    margin-top: 5rem;
+    display: block;  
     text-align: center;
 }
 
 .portfolio .more a {
     color: #64ffda;
+    padding: 3px 8px;
 }
 
 .copyright{
