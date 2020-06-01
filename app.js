@@ -10,25 +10,28 @@ var firebaseConfig = {
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
 
-  let formMessage = firebase.database().ref('register');
+  let formMessage = firebase.database().ref('messages');
 
 
 const messageform = document.querySelector('#messageform');
 
 messageform.addEventListener('submit', formSubmit);
 
-function formsubmit(e) {
+function formSubmit(e) {
     e.preventDefault();
 
-    let name = document.querySelector('#name');
-    let email = document.querySelector('#email');
-    let message = document.querySelector('#message');
+    let name = document.querySelector('#name').value;
+    let email = document.querySelector('#email').value;
+    let message = document.querySelector('#message').value;
 
     sendMessage(name, email, message);
 
-    document.getElementById('registrationform').reset();
+    document.querySelector('.alert').style.display = 'block';
+
+    setTimeout(() => {document.querySelector('.alert').style.display = 'none'}, 4000);
+
+    document.getElementById('messageform').reset();
 }
 
 function sendMessage(name, email, message) {

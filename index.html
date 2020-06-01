@@ -237,14 +237,15 @@
                 <h1><span>05.</span> &nbspDrop me a message ✨</h1>
             </div>
 
-            <form action="" method="POST" id="messageform">
+            <form id="messageform">
+                <div class="alert">Thanks :)</div>
                 <label for="name">NAME.</label>
                 <input type="text" id="name" name="name" required>
                 <label for="email">EMAIL.</label>
-                <input type="email" id="email" name="email" required>
+                <input type="text" id="email" name="email" required>
                 <label for="message">MESSAGE.</label>
                 <textarea name="message" id="message" cols="8" rows="8"></textarea>
-                <button type="submit" sendMessage()>Submit</button>
+                <button type="submit">Submit</button>
             </form>
         </div>
     </section>
@@ -267,7 +268,7 @@
     <script src="main.js"></script>
 
     <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-database.js"></script> 
     <script src="app.js"></script>
 </body>
 </html>
