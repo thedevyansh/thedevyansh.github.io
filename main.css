@@ -528,7 +528,7 @@ textarea{
     color: #0A192F;
 }
 
-#messageform button{
+#messageform button, .portfolio .more button{
     width: initial;
     border: none;
     background: transparent;
@@ -542,7 +542,7 @@ textarea{
     transition: background-color 650ms;
 }
 
-#messageform button:hover {
+#messageform button:hover, .portfolio .more button:hover {
     background-color: #172a45;
 } 
 
@@ -560,6 +560,16 @@ textarea{
     background-color: #172a45;
     padding: 4px 40px;
     border-radius: 3px;
+}
+
+.portfolio .more{
+    margin-top: 6rem;
+    display: block;
+    text-align: center;
+}
+
+.portfolio .more a {
+    color: #64ffda;
 }
 
 .copyright{
@@ -718,6 +728,14 @@ textarea{
 
     .about .container{
         flex-direction: column;
+    }
+
+    .portfolio-item {
+        margin-bottom: 13rem;
+    }
+
+    .portfolio-item:last-child{
+        margin-bottom: 0;
     }
 
     .profile-img{
