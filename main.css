@@ -530,12 +530,19 @@ textarea{
 } 
 
 #messageform .alert {
-    display: none;
     color: #64ffda;
     margin: auto;
     text-align: center;
     margin-bottom: 40px;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+    display: none;
+}
+
+#messageform .alert span {
+    letter-spacing: 2px;
+    background-color: #172a45;
+    padding: 4px 40px;
+    border-radius: 3px;
 }
 
 .copyright{

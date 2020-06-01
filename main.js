@@ -12,5 +12,13 @@ $(document).ready(function() {
     $('#up').on('click', function() {
         $('html, body').animate({ scrollTop: 0 }, 100);
     });
+
+    document.querySelector('#messageform').addEventListener('submit', () => {
+        $('.alert').fadeIn(1000, () => {
+            setTimeout(() => {
+                $('.alert').fadeOut('slow');
+            }, 4000);
+        });
+    });
 });
 

@@ -27,10 +27,6 @@ function formSubmit(e) {
 
     sendMessage(name, email, message);
 
-    document.querySelector('.alert').style.display = 'block';
-
-    setTimeout(() => {document.querySelector('.alert').style.display = 'none'}, 4000);
-
     document.getElementById('messageform').reset();
 }
 
