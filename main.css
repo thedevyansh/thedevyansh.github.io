@@ -328,8 +328,9 @@ li{
 }
 
 .fa-facebook:hover,
-.fa-twitter:hover,
-.fa-instagram:hover
+.fa-github:hover,
+.fa-instagram:hover,
+.fa-linkedin:hover
 {
     color: #64ffda;
 }
@@ -528,7 +529,9 @@ textarea{
     color: #0A192F;
 }
 
-#messageform button, .portfolio .more button{
+#messageform button, .portfolio .more button,
+#messageform #reset
+{
     width: initial;
     border: none;
     background: transparent;
@@ -542,7 +545,8 @@ textarea{
     transition: background-color 650ms;
 }
 
-#messageform button:hover, .portfolio .more button:hover {
+#messageform button:hover, .portfolio .more button:hover,
+#messageform #reset:hover {
     background-color: #172a45;
 } 
 

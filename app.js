@@ -18,6 +18,12 @@ const messageform = document.querySelector('#messageform');
 
 messageform.addEventListener('submit', formSubmit);
 
+document.querySelector('#reset').addEventListener('click', () => {
+  document.querySelector('#name').value = '';
+  document.querySelector('#email').value = '';
+  document.querySelector('#message').value = '';
+});
+
 function formSubmit(e) {
     e.preventDefault();
 
@@ -27,7 +33,10 @@ function formSubmit(e) {
 
     sendMessage(name, email, message);
 
-    document.getElementById('messageform').reset();
+    //document.getElementById('messageform').reset();
+    document.querySelector('#name').value = '';
+    document.querySelector('#email').value = '';
+    document.querySelector('#message').value = '';
 }
 
 function sendMessage(name, email, message) {
