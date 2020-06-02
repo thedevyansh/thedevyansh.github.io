@@ -296,6 +296,18 @@ li{
 
 .about-details p {
     color: #8892b0;
+    font-size: 1.7rem;
+}
+
+.about-details p a span {
+    color: #64ffda;
+}
+
+hr {
+    width: 100px;
+    height: 6px;
+    background-color: #8892B0;
+    border: none;
 }
 
 .profile-img {
@@ -353,8 +365,10 @@ li{
 
 .skill h1{
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     margin: 2rem -2px 2rem 0;
+    color: #CCD6F6;
+    font-size: 1.3rem;
 }
 
 .icon-container{
@@ -365,8 +379,8 @@ li{
     border-radius: 6px;
     display: flex;
     transform: rotate(45deg);
-    box-shadow: 5px 5px 10px rgba(0, 0, 0 , 0.4),
-    -1px -1px 10px rgba(255, 255,255 , 0.07);
+    box-shadow: 4px 4px 6px rgba(0, 0, 0 , 0.4),
+    -1px -1px 5px rgba(255, 255,255 , 0.07);
 }
 
 .icon-container i{
@@ -665,7 +679,7 @@ textarea{
     }
 
     .icon-container i{
-        font-size: 4rem;
+        font-size: 2.5rem;
     }
 
     .portfolio-item{
@@ -733,6 +747,10 @@ textarea{
 
     .about .container{
         flex-direction: column;
+    }
+
+    .icon-container i{
+        font-size: 2rem;
     }
 
     .portfolio-item {
