@@ -74,20 +74,13 @@ img{
     background-color: #0A192F;
     position: fixed;
     height: 100%;
-    /*width: 0;*/
-    width: 100%;
+    width: 0;
     top: 0;
     right: 0;
     bottom: 0;
     overflow-y: scroll;
     z-index: 5000;
     transition: all 350ms cubic-bezier(0.6, 0.05, 0.28, 0.91);
-}
-
-.openSideNav {
-    padding: 10px;
-    margin: 20px;
-    cursor: pointer;
 }
 
 .closeSideNav {
@@ -106,7 +99,7 @@ img{
 
 .photoHeader h1 {
     color: #CCD6F6;
-    font-size: 4rem;
+    font-size: 3.3rem;
     padding-bottom: 10px;
 }
 
@@ -125,7 +118,7 @@ img{
 .myPhotos1, .myPhotos2 {
     width: 90%;
     margin: 0 auto;
-    margin-top: 90px;
+    margin-top: 70px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -136,6 +129,11 @@ img{
     border-left: 1px solid #8892B0;
     border-bottom: 1px solid #8892B0;
     margin: 5px;
+    transition: transform 0.3s;
+}
+
+.myPhotos1 img:hover, .myPhotos2 img:hover {
+    transform: scale(1.1);
 }
 
 .myPhotos2 {
@@ -147,6 +145,8 @@ img{
 }
 
 .getBack {
+    display: block;
+    text-align: center;
     margin-bottom: 40px;
 }
 
