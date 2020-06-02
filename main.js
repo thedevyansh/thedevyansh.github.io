@@ -28,5 +28,9 @@ $(document).ready(function() {
     document.querySelector('.closeSideNav').addEventListener('click', () => {
         document.querySelector('.sideNav').style.width = "0px";
     });
+
+     document.querySelector('.getBack button').addEventListener('click', () => {
+        document.querySelector('.sideNav').style.width = "0px";
+    });
 });
 

@@ -58,29 +58,6 @@ img{
     margin-bottom: 0.6rem;
 }
 
-/*.section-heading h1::before,
-.section-heading h1::after{
-    content:'';
-    position: absolute;
-    bottom: -.5rem;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(255,255,255,0.75);
-}
-
-.section-heading h1::before{
-    width: 10rem;
-    height: 1px;
-
-}
-
-.section-heading h1::after{
-    width: 0.9rem;
-    height: 0.9rem;
-    border-radius: 100%;
-    bottom: -.9rem;
-}*/
-
 .section-heading h6{
     font-size: 1.5rem;
     font-weight: 300;
@@ -121,10 +98,10 @@ img{
     color: #64ffda;
 }
 
-.photoHeader {
+.photoHeader, .getBack {
     width: 90%;
     margin: 0 auto;
-    margin-top: 40px;
+    margin-top: 60px;
 }
 
 .photoHeader h1 {
@@ -143,6 +120,34 @@ img{
 
 .photoHeader hr {
     background-color: #CCD6F6;
+}
+
+.myPhotos1, .myPhotos2 {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.myPhotos1 img, .myPhotos2 img{
+    max-width: 200px;
+    border-left: 1px solid #8892B0;
+    border-bottom: 1px solid #8892B0;
+    margin: 5px;
+}
+
+.myPhotos2 {
+    margin-top: 0;
+}
+
+.myPhotos2 img {
+    max-width: 300px;
+}
+
+.getBack {
+    margin-bottom: 40px;
 }
 
 header{
@@ -602,7 +607,7 @@ textarea{
 }
 
 #messageform button, .portfolio .more button,
-#messageform #reset
+#messageform #reset, .sideNav .getBack button
 {
     width: initial;
     border: none;
@@ -618,7 +623,7 @@ textarea{
 }
 
 #messageform button:hover, .portfolio .more button:hover,
-#messageform #reset:hover {
+#messageform #reset:hover, .sideNav .getBack button:hover {
     background-color: #172a45;
 } 
 
