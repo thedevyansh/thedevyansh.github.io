@@ -20,5 +20,13 @@ $(document).ready(function() {
             }, 4000);
         });
     });
+
+    document.querySelector('.openSideNav').addEventListener('click', () => {
+        document.querySelector('.sideNav').style.width = "100%";
+    });
+
+    document.querySelector('.closeSideNav').addEventListener('click', () => {
+        document.querySelector('.sideNav').style.width = "0px";
+    });
 });
 

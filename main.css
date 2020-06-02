@@ -93,6 +93,58 @@ img{
     margin-right: 5rem;
 }
 
+.sideNav {
+    background-color: #0A192F;
+    position: fixed;
+    height: 100%;
+    /*width: 0;*/
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: scroll;
+    z-index: 5000;
+    transition: all 350ms cubic-bezier(0.6, 0.05, 0.28, 0.91);
+}
+
+.openSideNav {
+    padding: 10px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.closeSideNav {
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    font-size: 6rem;
+    color: #64ffda;
+}
+
+.photoHeader {
+    width: 90%;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+.photoHeader h1 {
+    color: #CCD6F6;
+    font-size: 4rem;
+    padding-bottom: 10px;
+}
+
+.photoHeader h6{
+    color: #64ffda;
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.photoHeader hr {
+    background-color: #CCD6F6;
+}
+
 header{
     width: 100%;
     height: 100vh;
@@ -128,6 +180,7 @@ li{
     font-size: 1.5rem;
     padding: 1rem;
     transition: color 650ms;
+    color: #CCD6F6;
 }
 
 .nav-link span{
@@ -369,6 +422,11 @@ hr {
     margin: 2rem -2px 2rem 0;
     color: #CCD6F6;
     font-size: 1.3rem;
+}
+
+.skill h1 i {
+    color: #64ffda;
+    font-size: 1.6rem;
 }
 
 .icon-container{
@@ -641,6 +699,9 @@ textarea{
 
 @media screen and (max-width: 768px){
 
+    .closeSideNav {
+        font-size: 4rem;
+    }
     .nav-list{
         flex-direction: column;
     }
