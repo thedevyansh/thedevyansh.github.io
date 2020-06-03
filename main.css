@@ -519,6 +519,19 @@ hr {
     color: #CCD6F6;
 }
 
+.coming-soon {
+    display: block;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: #8892B0;
+}
+
+.coming-soon img {
+    width: 30px;
+    height: 30px;
+}
+
 .timeline ul{
     border-left: 4px solid #ffe838;
     border-radius: .8rem;
