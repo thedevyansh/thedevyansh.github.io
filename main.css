@@ -126,11 +126,6 @@ img{
 .myPhotos1 img, .myPhotos2 img{
     max-width: 200px;
     margin: 5px;
-    transition: transform 0.3s;
-}
-
-.myPhotos1 img:hover, .myPhotos2 img:hover {
-    transform: scale(1.1);
 }
 
 .myPhotos2 {
