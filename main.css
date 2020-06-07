@@ -83,35 +83,38 @@ img{
     transition: all 350ms cubic-bezier(0.6, 0.05, 0.28, 0.91);
 }
 
-.closeSideNav {
-    position: absolute;
-    top: 0px;
-    right: 20px;
-    font-size: 6rem;
-    color: #64ffda;
-}
-
-.photoHeader, .getBack {
+.photoHeader1 {
     width: 90%;
     margin: 0 auto;
     margin-top: 60px;
 }
 
-.photoHeader h1 {
+.photoHeader, .main-content, .getBack {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+.photoHeader h1, .photoHeader1 h1{
     color: #CCD6F6;
     font-size: 3.3rem;
     padding-bottom: 10px;
 }
 
-.photoHeader h6{
+.photoHeader h6, .photoHeader1 h6{
     color: #64ffda;
     font-size: 1.5rem;
     font-weight: 300;
     padding-bottom: 15px;
 }
 
-.photoHeader hr {
+.photoHeader hr, .photoHeader1 hr {
     background-color: #CCD6F6;
+}
+
+.main-content {
+    color: #8892B0;
+    font-size: 1.6rem;
 }
 
 .myPhotos1, .myPhotos2 {
@@ -537,31 +540,25 @@ hr {
 
 .intro {
     background-color: #0A192F;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: start;
-    padding: 30px;
+    padding: 40px 40px 40px 25px;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
+    transition: background-color 650ms;
+}
+
+.intro:hover {
+    background-color: #172a45;
 }
 
 .intro .topicName h2 {
     color: #CCD6F6;
-    font-size: 1.8rem;
+    font-size: 1.9rem;
 }
 
 .intro .topicName p {
     color: #8892B0;
     font-size: 1.4rem;
     font-weight: 300;
-}
-
-.intro .status {
-    margin-top: 20px;
-    font-size: 1.2rem;
-    color: #64ffda;
-    font-family: 'Space Mono', monospace;
 }
 
 .contact{
