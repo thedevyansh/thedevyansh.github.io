@@ -215,6 +215,19 @@ li{
     border-radius: initial;
 }
 
+.octocat {
+    position: absolute;
+    top: 5rem;
+    left: 5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.octocat img {
+    width: 5rem;
+    height: 5rem;
+}
+
 .menu-toggler{
     position: absolute;
     top: 5rem;
@@ -771,6 +784,17 @@ textarea{
 }
 
 @media screen and (max-width: 600px){
+
+    .octocat {
+        top: 2rem;
+        left: 2rem;
+    }
+
+    .octocat img {
+        width: 4rem;
+        height: 4rem;
+    }
+
     .menu-toggler{
         top: 2rem;
         right: 2rem;
